@@ -30,18 +30,58 @@ let fruits = ["apple", "banana", "orange"] ;
 // }
 
 let mixins = ["apple", false, "banana", 4, "orange", ["tiger", "lion"]] ;
-// for (let mixin of mixins) {
-//     console.log("mixins : " + mixin);
-//     // console.log(!(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'))
-//     // )
+for (let mixin of mixins) {
+    console.log("mixins : " + mixin);
+    // console.log(!(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'))
+    // )
 
-//     let condition = !(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'));
-//     if (condition) {
-//         for (let animal of mixin) {
-//             console.log("animals : " + animal);
-//         }
-//     }
-// }
+    let condition = !(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'));
+    if (condition) {
+        for (let animal of mixin) {
+            console.log("animals : " + animal);
+        }
+    }
+}
 
+let foreach = function (mixin, index){
+    console.log("mixins : " + mixin);
+    // console.log(!(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'))
+    // )
 
+    let condition = !(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'));
+    if (condition) {
+        for (let animal of mixin) {
+            console.log("animals : " + animal);
+        }
+    } 
+}
+
+mixins.forEach(foreach);
+
+mixins.forEach(function (mixin, index){
+    console.log("mixins : " + mixin);
+    // console.log(!(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'))
+    // )
+
+    let condition = !(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'));
+    if (condition) {
+        for (let animal of mixin) {
+            console.log("animals : " + animal);
+        }
+    } 
+});
+
+mixins.forEach((mixin, index)=>{
+    console.log("mixins : " + mixin);
+    // console.log(!(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'))
+    // )
+
+    let condition = !(((typeof mixin) == 'number') || ((typeof mixin) == 'string') || ((typeof mixin) == 'boolean'));
+    if (condition) {
+        for (let animal of mixin) {
+            console.log("animals : " + animal);
+        }
+    } 
+});
 console.log("progrma end !");
+
